@@ -11,3 +11,4 @@ do
 		echo $line | wc -w		
 	fi
 done
+rm tmp
