@@ -3,7 +3,7 @@
 
 cd $1
 
-for i in $(ls)
+for i in $(ls -v)
 	do
 		if [ -d $i ]; then # if i is a directory
 			cd $i
