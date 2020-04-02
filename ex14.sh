@@ -6,7 +6,7 @@ sum=0
 # read file line by line
 cat $2 | while read line
 do
-	echo $line | grep "$1" > tmp
+	echo $line | grep -w "$1" > tmp
 	read var < tmp # var will contain a string only if line contains the correct name
 	if [ -n "$var" ]
 	then
