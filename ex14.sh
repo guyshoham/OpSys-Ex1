@@ -20,7 +20,7 @@ do
 done
 
 read sum < balance
-echo Total Balance: $[sum]
+echo Total balance: $[sum]
 
 rm balance
 rm tmp
