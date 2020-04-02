@@ -2,6 +2,8 @@
 # Name: Guy Shoham, ID: 302288444
 
 declare -i count=0
+grep "" $1 > nospaces
+grep "" nospaces > $1
 cat $1 | while read line
 do
 	#calculate the number of words of the line (if it contains 'text'), and write to a temp flle
@@ -17,3 +19,4 @@ do
 	fi
 done
 rm tmp
+rm nospaces
