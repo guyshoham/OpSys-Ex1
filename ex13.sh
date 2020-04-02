@@ -1,7 +1,7 @@
 #!/bin/bash
 # Name: Guy Shoham, ID: 302288444
 
-cd $1
+cd "$1"
 
 for i in $(ls -v)
 	do
