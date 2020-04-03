@@ -11,8 +11,7 @@ do
 	if [ -n "$var" ]
 	then
 		echo $line
-		arr=($var)
-		echo ${arr[2]} > tmp # save the integer value in tmp file
+		echo $line | egrep -o '[-]?[0-9]+' | head -1 > tmp		
 		read value < tmp # read value from tmp file
 		sum=$((sum+value)) # add to sum
 		echo $sum > balance # save sum into another temp file (balance)
