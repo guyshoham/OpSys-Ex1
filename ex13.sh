@@ -9,9 +9,11 @@ for i in $(ls -v)
 			cd $i
 			if test -f "$2"; then
 				cat $2 #print file content
+				echo
 			fi
 			cd ..
 		elif [ $i == $2 ]; then # check if current file name is equal to target file name
 			cat $2 # print file content
+			echo
 		fi
 	done
