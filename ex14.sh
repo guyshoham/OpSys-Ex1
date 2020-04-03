@@ -11,7 +11,7 @@ do
 	if [ -n "$var" ]
 	then
 		echo $line
-		echo $line | egrep -o '[-]?[0-9]+' | head -1 > tmp		
+		echo $line | egrep -o '[-]?[0-9]+' | head -1 > tmp # grep the first numeric value in line (consider negative values)
 		read value < tmp # read value from tmp file
 		sum=$((sum+value)) # add to sum
 		echo $sum > balance # save sum into another temp file (balance)
