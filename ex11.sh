@@ -1,5 +1,4 @@
 #!/bin/bash
-# Name: Guy Shoham, ID: 302288444
 
 declare -i count=0
 grep "" $1 > nospaces
